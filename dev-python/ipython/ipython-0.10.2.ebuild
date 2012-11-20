@@ -2,11 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/ipython/ipython-0.10.2.ebuild,v 1.7 2011/07/17 11:52:36 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-# When a new version of this package supports Python 3, then 3.* Python ABIs should be unrestricted in dev-python/ipdb.
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_DEPEND="<<[{*-cpython}readline?]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
+
 
 inherit distutils elisp-common eutils
 
@@ -25,7 +25,6 @@ RDEPEND="dev-python/pexpect
 		virtual/emacs
 	)
 	gnuplot? ( dev-python/gnuplot-py )
-	readline? ( sys-libs/readline )
 	smp? (
 		dev-python/foolscap
 		dev-python/pyopenssl

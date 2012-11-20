@@ -2,11 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/numpy/numpy-1.5.1.ebuild,v 1.20 2012/05/04 15:12:15 patrick Exp $
 
-EAPI=3
-
-PYTHON_DEPEND="*"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
 inherit distutils eutils fortran-2 flag-o-matic toolchain-funcs versionator
 

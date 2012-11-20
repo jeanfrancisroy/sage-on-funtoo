@@ -22,3 +22,6 @@ sys-libs/zlib               minizip
 # Recomended flags for optional dependency jmol
 ################################################
 sci-chemistry/jmol client-only
+
+virtual/python-sqlite external
+virtual/python-json external
