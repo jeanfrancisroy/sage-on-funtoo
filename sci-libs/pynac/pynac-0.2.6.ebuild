@@ -22,7 +22,7 @@ RESTRICT="mirror"
 DEPEND="virtual/pkgconfig"
 RDEPEND=""
 
-S="${WORKDIR}/pynac-pynac-f50fb4810d97"
+S="${WORKDIR}/pynac-pynac-d178f77211b5"
 
 DOCS=( AUTHORS NEWS README )
 
