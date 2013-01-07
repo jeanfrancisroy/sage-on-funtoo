@@ -1,6 +1,89 @@
 # ChangeLog for sci-mathematics/sage
-# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+*sage-5.5-r3 (06 Jan 2013)
+
+  06 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  +sage-5.5-r3.ebuild, +files/trac_13324.patch,
+  +files/maxima-5.29.1-doctests.patch:
+  add a bump to integrate ecls/maxima upgrade
+
+*sage-5.5-r2 (05 Jan 2013)
+
+  05 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  -files/trac11395-fix_tutorial.patch, -sage-5.4.1-r2.ebuild,
+  -sage-5.4.1-r3.ebuild, -sage-5.5_rc0.ebuild, -sage-5.5_rc0-r1.ebuild,
+  -files/trac_11395_update_gfan_to_0.5.patch, -sage-5.5-r1.ebuild,
+  +sage-5.5-r2.ebuild:
+  depend on cython-0.17.4 in 5.5-r2 drop old
+
+  05 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  sage-5.5-r1.ebuild:
+  deps move
+
+*sage-5.5-r1 (04 Jan 2013)
+
+  04 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  +files/trac12205.patch, +sage-5.5-r1.ebuild:
+  Say goodbye to the dependency on zodb
+
+*sage-5.5 (27 Dec 2012)
+
+  27 Dec 2012; Christopher Schwan <cschwan@students.uni-mainz.de>
+  +sage-5.5.ebuild:
+  Version bump
+
+  18 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  sage-5.4.1-r3.ebuild, sage-5.5_rc0-r1.ebuild:
+  bump EAPI
+
+*sage-5.5_rc0-r1 (16 Dec 2012)
+*sage-5.4.1-r3 (16 Dec 2012)
+
+  16 Dec 2012; Christopher Schwan <cschwan@students.uni-mainz.de>
+  +sage-5.4.1-r3.ebuild, +sage-5.5_rc0-r1.ebuild:
+  Migrate to distutils-r1.eclass
+
+  10 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  sage-5.4.1-r2.ebuild, sage-5.5_rc0.ebuild, metadata.xml:
+  change useflag to numpy17 no dots please
+
+*sage-5.5_rc0 (06 Dec 2012)
+
+  06 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  +sage-5.5_rc0.ebuild, files/sage-matroids.patch:
+  5.5rc0 + fix sage-matroids patch
+
+  06 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  sage-5.4.1-r2.ebuild, +files/sage-matroids.patch:
+  conditionally allow sage-matroids to be used
+
+  05 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  -files/numpy-1.7.patch, sage-5.4.1-r2.ebuild:
+  turm out the numpy 1.7 is unnecessary
+
+  04 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  sage-5.4.1-r2.ebuild:
+  remove non-existent helper
+
+  03 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  -sage-5.4.1-r1.ebuild:
+  remove old
+
+*sage-5.4.1-r2 (03 Dec 2012)
+
+  03 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  +files/numpy-1.7.patch, +files/trac_13740_final_fixes.patch,
+  +sage-5.4.1-r2.ebuild, metadata.xml:
+  Lots of things: upgrade cython used, allow numpy 1.7.0 lock matplotlib
+
+*sage-5.4.1-r1 (03 Dec 2012)
+
+  03 Dec 2012; François Bissey <francois.bissey@canterbury.ac.nz>
+  -sage-5.4.1.ebuild, +sage-5.4.1-r1.ebuild,
+  files/sage-5.4-variables.patch.bz2:
+  revision of sage variables patch
 
   21 Nov 2012; François Bissey <francois.bissey@canterbury.ac.nz>
   -files/sage-4.5.1-fix-qepcad-path.patch, -files/sage-4.8-dist.py.patch,
