@@ -1,6 +1,20 @@
 # ChangeLog for sci-mathematics/eclib
-# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  22 Jan 2013; Christopher Schwan <cschwan@students.uni-mainz.de>
+  eclib-20120428.ebuild, eclib-20120830.ebuild:
+  Migrate to sagemath mirror
+
+*eclib-20120830 (13 Jan 2013)
+
+  13 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  +eclib-20120830.ebuild:
+  bump for sage 5.6
+
+  09 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  eclib-20120428.ebuild:
+  update SRC_URI
 
   02 Aug 2012; François Bissey <francois.bissey@canterbury.ac.nz>
   -eclib-20100711_p0.ebuild, -files/eclib-20100711_p0-g0n_makefile.patch.bz2,
@@ -178,4 +192,3 @@
   20 Nov 2009; Christopher Schwan <cschwan@students.uni-mainz.de>
   +sage-eclib-20080310.7.ebuild, +metadata.xml:
   Initial import
-

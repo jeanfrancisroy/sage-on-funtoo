@@ -12,7 +12,7 @@ MY_P="sagetex-$(replace_version_separator 3 '.')"
 
 DESCRIPTION="SageTeX package allows to embed code from the Sage mathematics software suite into LaTeX documents"
 HOMEPAGE="http://www.sagemath.org https://bitbucket.org/ddrake/sagetex/overview"
-SRC_URI="http://sage.math.washington.edu/home/release/sage-5.0/sage-5.0/spkg/standard/${MY_P}.spkg -> ${MY_P}.tar.bz2"
+SRC_URI="mirror://sagemath/${MY_P}.spkg -> ${MY_P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"

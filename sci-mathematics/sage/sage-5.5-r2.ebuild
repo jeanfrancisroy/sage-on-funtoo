@@ -16,7 +16,7 @@ MY_P="sage-$(replace_version_separator 2 '.')"
 
 DESCRIPTION="Math software for algebra, geometry, number theory, cryptography and numerical computation"
 HOMEPAGE="http://www.sagemath.org"
-SRC_URI="http://sage.math.washington.edu/home/release/${MY_P}/${MY_P}/spkg/standard/${MY_P}.spkg -> ${P}.tar.bz2"
+SRC_URI="mirror://sagemath/${MY_P}.spkg -> ${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -41,7 +41,7 @@ CDEPEND="dev-libs/gmp
 	~sci-libs/givaro-3.7.1
 	>=sci-libs/gsl-1.15
 	>=sci-libs/iml-1.0.1
-	>=sci-libs/libcliquer-1.2_p11
+	>=sci-libs/libcliquer-1.21_p0
 	~sci-libs/linbox-1.3.2[sage]
 	~sci-libs/m4ri-20120613
 	~sci-libs/m4rie-20120613
@@ -116,7 +116,7 @@ RDEPEND="${CDEPEND}
 PDEPEND="~sci-mathematics/sage-notebook-0.10.2[${PYTHON_USEDEP}]
 	~sci-mathematics/sage-data-conway_polynomials-0.4"
 
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}"/${MY_P}
 
 pkg_setup() {
 	python_export python2_7 EPYTHON

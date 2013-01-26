@@ -2,6 +2,37 @@
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  23 Jan 2013; Christopher Schwan <cschwan@students.uni-mainz.de>
+  sage-5.5-r2.ebuild, sage-5.5-r4.ebuild, sage-5.6_rc1.ebuild:
+  Migrate to sagemath mirror
+
+*sage-5.6_rc1 (20 Jan 2013)
+
+  20 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  -sage-5.6_rc0.ebuild, +sage-5.6_rc1.ebuild:
+  5.6rc1
+
+  17 Jan 2013; Christopher Schwan <cschwan@students.uni-mainz.de>
+  sage-5.5-r2.ebuild, sage-5.5-r4.ebuild, sage-5.6_rc0.ebuild:
+  Update dependency on libcliquer
+
+  14 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  sage-5.6_rc0.ebuild:
+  gap dep in 5.6
+
+*sage-5.6_rc0 (14 Jan 2013)
+
+  14 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  +sage-5.6_rc0.ebuild, +files/sage-5.6-variables.patch:
+  5.6rco
+
+*sage-5.5-r4 (12 Jan 2013)
+
+  12 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
+  -sage-5.5.ebuild, +files/trac_13324.2.patch, -sage-5.5-r3.ebuild,
+  +sage-5.5-r4.ebuild, files/maxima-5.29.1-doctests.patch:
+  update ecls/maxima patches dump zodb enabled sage
+
 *sage-5.5-r3 (06 Jan 2013)
 
   06 Jan 2013; François Bissey <francois.bissey@canterbury.ac.nz>
@@ -2428,4 +2459,3 @@
   ChangeLog:
   Initial import - removed the following packages: atlas bzip2 gnutls gsl
   libpng maxima mercurial mpfr ntl pari R readline scons sqlite zlib
-
